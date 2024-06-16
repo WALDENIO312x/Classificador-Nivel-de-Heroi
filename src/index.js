@@ -1,34 +1,35 @@
-const name = 'Wandré';
-let xp = 50000;
-let heroi = [name, xp];
 
-switch (nivel) {
-    case 1: xp
-        console.log('Ferro');
+
+let name = 'Wandré';
+let xp = 50000;
+let nivel;
+
+switch (true) {
+    case (xp < 1000):
+        nivel = 'Ferro';
+        break; 
+    case (xp >= 1000 && xp <= 2000):
+        nivel = 'Bronze';
+        break; 
+    case (xp > 2000 && xp <= 5000):
+        nivel = 'Prata';
         break;
-    case 2:
-        console.log('Bronze');
+    case (xp > 5000 && xp <= 7000):
+        nivel = 'Ouro';
         break;
-    case 3:
-        console.log('Prata');
+    case (xp > 7000 && xp <= 8000):
+        nivel = 'Platina';
         break;
-    case 4:
-        console.log('Ouro');
+    case (xp > 8000 && xp <= 9000):
+        nivel = 'Ascendente';
         break;
-    case 5:
-        console.log('Platina');
+    case (xp > 9000 && xp <= 10000):
+        nivel = 'Imortal';
         break;
-    case 6:
-        console.log('Ascendente');
+    case (xp > 10000):
+        nivel = 'Radiante';
         break;
-    case 7:
-        console.log('Imortal');
-        break;
-    case 8:
-        console.log('Radiante');
-        break;
-    
 }
 
-console.log(heroi);
+console.log("O Heroi de nome " + name + " está no nível de " + nivel + ".");
 
