@@ -1,7 +1,7 @@
 
 
 let name = 'Wandré';
-let xp = 50000;
+let xp = 2000;
 let nivel;
 
 switch (true) {
